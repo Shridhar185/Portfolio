@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+ 
+<body>
+	<div id=header>
+		<div class="container">
+			<nav>
+ 
+				<ul>
+					<li><a href="#header">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#contact">Contact</a></li>					
+				</ul>
+			</nav>
+			<div class="head">
+					<h1>Hi, </h1>
+					<h1>I'm Shridhar  S </h1>
+					
+			</div>
+		</div>
+	</div>
+	<div id="about">
+		<div class="container">
+			<div class="row">
+				<div class="about-col-1">
+					<img src="image/me.jpg" height="300" width="100" alt="">
+				</div>
+				<div class="about-col-2">
+					<h1 class="sub-title">About Me</h1>
+					<p>  My name is Shridhar. I am a Web developer and Learner. I am currently pursuing Bachelor's degree in Engineering College of Gogte Institute of Technology.my hobbies are watching sci fi movies and reading books 
+              </p>
+					<div class ="tab-titles">
+						<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+						<p class="tab-links" onclick="opentab('education')">Education</p>
+					</div>
+
+					<div class="tab-contents active-tab" id="skills">
+							<ul>
+								<li>Editor</li>
+								<li>Web Developer</li>
+								<li>C Programmer</li> 
+							</ul>
+					</div>
+					<div class="tab-contents" id="experience">
+							<ul>
+								<li><span>2022</span><br>Currently Studing</li>
+								
+							</ul>
+					</div>
+					<div class="tab-contents" id="education">
+							<ul> 
+								<li><span></span> BE Computer Science<br>KLS Gogte Institute Of Technology</li>
+							</ul>
+					</div>
+
+				</div>
+			</div>
+	    </div>
+	</div>
+
+	  <div id="services">
+		<div class="container">
+			<h1 class="sub-title">My Services</h1>
+			<div class="services-list">
+				<div>
+					<i class="fa-solid fa-code"></i>
+					<h2>Web Design </h2>
+					<p>A website needs to be easy to navigate, visually appealing, and fast in order to hold a visitor's attention and convert leads. ..<br>
+						Content & copywriting. ...<br>Search Engine Optimization (SEO) ...<br>Social media marketing. .
+						</p>
+					<a href = "#">Learn More</a>
+				</div>
+				<div>
+					<i class="fa-brands fa-app-store"></i>
+					<h2>App Design</h2>
+					<p>The application designer gathers requirements from business systems analysts and end users. The designer also determines which IT resources will be available to support the application. The application designer then writes the design specifications for the application programmers to implement.
+					</p>
+					<a href = "#">Learn More</a>
+				</div>
+			</div>
+		</div>
+	</div>  
+	<div id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="contact-left"><br>
+					<h1 class="sub-title">Contact Me</h1>
+					<p> gmail:shreedharls095@gamil.com</p>
+					<p<</p>
+				 
+				</div>
+				<div class="contact-right">
+					<form>
+						<input type="text" name="Name" placeholder="Your Name" required>
+						<input type="email" name="email" placeholder="Your Email" required>
+						<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+						<button type="submit" class="btn btn2">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>		 
+	</div>
+<script>
+	var tablinks = document.getElementsByClassName("tab-links");
+	var tabcontents = document.getElementsByClassName("tab-contents");
+
+	function opentab(tabname){
+		for(tablink of tablinks){
+			tablink.classList.remove("active-link");
+		}
+		for(tabcontent of tabcontents){
+			tabcontent.classList.remove("active-tab");
+		}
+		event.currentTarget.classList.add("active-link");
+		document.getElementById(tabname).classList.add("active-tab");
+	}
+</script>
+</body>
+</html>
