@@ -186,12 +186,6 @@ nav ul li a:hover{
 	display: inline-block;
 }
  
-
- 
-
-/*-------------------Contact--------------------*/
-
-
  .contact-left{
 	flex-basis: 100%;
 } 
@@ -206,12 +200,7 @@ nav ul li a:hover{
 	margin-right:500px ;
 	font-size: 25px;
 }
-.btn.btn2{
-	display: inline-block;
-	background: red;
-	border-radius: 5px;
-	padding:10px;
-}
+
 .contact-rigth form{
 	width: 100%;
 }
@@ -232,21 +221,14 @@ form btn2{
 	margin-top: 20px;
 	cursor: pointer;
 }
+#sty{
+	color:white;
+	font-size:25px;
+	padding:13px;
+	background-color: red;
+	border-radius:7px;
+	margin-left: 42%;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
